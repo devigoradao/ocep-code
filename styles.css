@@ -36,6 +36,7 @@ p {
 
 .file-upload {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .file-label {
@@ -51,21 +52,26 @@ input[type="file"] {
     display: none;
 }
 
+.file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
 button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #6c757d;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: not-allowed;
     font-size: 16px;
 }
 
-button:hover {
-    background-color: #218838;
+button.active {
+    background-color: #28a745;
+    cursor: pointer;
 }
 
-#previewContainer {
-    margin-top: 20px;
-    display: none;
-}
+button:hover {
+    background-color:
